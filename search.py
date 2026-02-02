@@ -56,16 +56,15 @@ def stripText(soup, url):
    if soup.title is not None:
       title = soup.title.string
 
+   txt = ""
 
    for p in soup.find_all('p'):
-      txt = p.getText().strip().rstrip()
-      #pprint(txt)
+      txt += p.getText().strip().rstrip()
       
-   pText = soup.getText().strip().rstrip()
-   if pText != '\n':
-    #  pprint(pText)
-      indexes = [match.start() for match in re.finditer(term, pText)]
-      writeExtracts(generateExtracts(indexes, pText), url, title)
+   if txt != '\n':
+      pprint(txt)
+      indexes = [match.start() for match in re.finditer(term, txt)]
+      writeExtracts(generateExtracts(indexes, txt), url, title)
       count = len(indexes)
    
 

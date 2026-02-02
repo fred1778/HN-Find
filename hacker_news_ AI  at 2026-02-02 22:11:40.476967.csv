@@ -1,0 +1,931 @@
+URL,Title,Extract
+https://news.ycombinator.com,Hacker News, ago  | hide | 69 comments14.On being sane in insane places (1973) [pdf] (weber.edu)56 points by dbgrman 4 hours ago  | hide | 32 comments15.Advancing AI Benchmarking with Game Arena (blog.google)77 points by salkahfi 4 hours ago  | hide | 40 comments16.Zig Libc (ziglang.org)46 points by ingve 4 hou
+https://news.ycombinator.com,Hacker News, ago  | hide | 69 comments14.On being sane in insane places (1973) [pdf] (weber.edu)56 points by dbgrman 4 hours ago  | hide | 32 comments15.Advancing AI Benchmarking with Game Arena (blog.google)77 points by salkahfi 4 hours ago  | hide | 40 comments16.Zig Libc (ziglang.org)46 points by ingve 4 hou
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz BlogSign inExperiencing an incident?WizPricingGet a demoPlatform Solutions PricingResources Customers C
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog," Wiz BlogSign inExperiencing an incident?WizPricingGet a demoPlatform Solutions PricingResources Customers Company Get a demoBlogHacking Moltbook: The AI Social Network Any Human Can Control1 exposed database. 35,000 emails. 1.5M API keys. And 17,000 humans behind the not-so-autonomous AI network.Ga"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog," Moltbook: The AI Social Network Any Human Can Control1 exposed database. 35,000 emails. 1.5M API keys. And 17,000 humans behind the not-so-autonomous AI network.Gal NagliFebruary 2, 2026What is Moltbook, and Why Did it Attract Our Attention?Moltbook, the weirdly futuristic social network, has quick"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"2, 2026What is Moltbook, and Why Did it Attract Our Attention?Moltbook, the weirdly futuristic social network, has quickly gone viral as a forum where AI agents post and chat. But what we discovered tells a different story - and provides a fascinating look into what happens when applications are vib"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"nd all data accessed during the research and fix verification has been deleted.Executive SummaryMoltbook is a social platform designed exclusively for AI agents - positioned as the ""front page of the agent internet."" The platform allows AI agents to post content, comment, vote, and build reputation "
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"ve SummaryMoltbook is a social platform designed exclusively for AI agents - positioned as the ""front page of the agent internet."" The platform allows AI agents to post content, comment, vote, and build reputation through a karma system, creating what appears to be a thriving social network where AI"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"ows AI agents to post content, comment, vote, and build reputation through a karma system, creating what appears to be a thriving social network where AI is the primary participant.Moltbook home pageOver the past few days, Moltbook gained significant attention in the AI community. OpenAI founding me"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"e a thriving social network where AI is the primary participant.Moltbook home pageOver the past few days, Moltbook gained significant attention in the AI community. OpenAI founding member Andrej Karpathy described it as ""genuinely the most incredible sci-fi takeoff-adjacent thing I have seen recentl"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"ly on X that he ""vibe-coded"" the platform: I didn’t write a single line of code for @moltbook. I just had a vision for the technical architecture, and AI made it a reality.”This practice, while revolutionary, can lead to dangerous security oversights - similar to previous vulnerabilities we have ide"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"d humans could post content disguised as ""AI agents"" via a basic POST request. The platform had no mechanism to verify whether an ""agent"" was actually AI or just a human with a script. The revolutionary AI social network was largely humans operating fleets of bots.an HTTP Post request to create new "
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog," via a basic POST request. The platform had no mechanism to verify whether an ""agent"" was actually AI or just a human with a script. The revolutionary AI social network was largely humans operating fleets of bots.an HTTP Post request to create new ""agent"" post in Moltbook's platformAn ""agent"" post i"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,sponded exactly as if we were an administrator. It immediately returned sensitive authentication tokens - including the API keys of the platform’s top AI Agents.Redacted API keys of the Platform's top AI AgentsList of most popular AgentsThis confirmed unauthenticated access to user credentials that 
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog, immediately returned sensitive authentication tokens - including the API keys of the platform’s top AI Agents.Redacted API keys of the Platform's top AI AgentsList of most popular AgentsThis confirmed unauthenticated access to user credentials that would allow complete account impersonation of any 
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"xposed.Identified tables through the technique described aboveSensitive Data Exposed in the Moltbook Database1. API Keys and Authentication Tokens for AI AgentsThe agents table exposed authentication credentials for every registered agent in the database{
+
+    ""name"": ""KingMolt"",
+
+    ""id"": ""ee7e81d"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"iscovered a new observers table containing 29,631 additional email addresses - these were early access signups for Moltbook's upcoming “Build Apps for AI Agents” product.Additional tables from Moltbook's new developers productUnlike Twitter handles which were publicly displayed on profiles, email ad"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"post on the platform - Inject malicious content or prompt injection payloads - Deface the entire website - Manipulate content consumed by thousands of AI agentsThis raises questions about the integrity of all platform content - posts, votes, and karma scores - during the exposure window.Modified pos"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"ble speed and creativity, enabling founders to ship real products with unprecedented velocity - as demonstrated by Moltbook. At the same time, today’s AI tools don’t yet reason about security posture or access controls on a developer’s behalf, which means configuration details still benefit from car"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"identity, participation, and authenticity should look like, and the supporting mechanisms are still evolving.#3. Privacy Breakdowns Can Cascade Across AI EcosystemsSimilarly, the platform’s approach to privacy highlights an important ecosystem-wide lesson. Users shared OpenAI API keys and other cred"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"cessible. A single platform misconfiguration was enough to expose credentials for entirely unrelated services - underscoring how interconnected modern AI systems have become.#4. Write Access Introduces Far Greater Risk Than Data Exposure AloneWhile data leaks are bad, the ability to modify content a"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"4. Write Access Introduces Far Greater Risk Than Data Exposure AloneWhile data leaks are bad, the ability to modify content and inject prompts into an AI ecosystem introduces deeper integrity risks, including content manipulation, narrative control, and prompt injection that can propagate downstream"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"stem introduces deeper integrity risks, including content manipulation, narrative control, and prompt injection that can propagate downstream to other AI agents. As AI-driven platforms grow, these distinctions become increasingly important design considerations.#5. Security Maturity is an Iterative "
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"hese distinctions become increasingly important design considerations.#5. Security Maturity is an Iterative ProcessSecurity, especially in fast-moving AI products, is rarely a one-and-done fix. We worked with the team through multiple rounds of remediation, with each iteration surfacing additional e"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"rn as builders, researchers, and platforms collectively define the next phase of AI-native applications.Closing Thoughts on Vibe Coding and SecurityAs AI continues to lower the barrier to building software, more builders with bold ideas but limited security experience will ship applications that han"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"rely has not yet caught up.The opportunity is not to slow down vibe coding but to elevate it. Security needs to become a first class, built-in part of AI powered development. AI assistants that generate Supabase backends can enable RLS by default. Deployment platforms can proactively scan for expose"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"up.The opportunity is not to slow down vibe coding but to elevate it. Security needs to become a first class, built-in part of AI powered development. AI assistants that generate Supabase backends can enable RLS by default. Deployment platforms can proactively scan for exposed credentials and unsafe"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"abase backends can enable RLS by default. Deployment platforms can proactively scan for exposed credentials and unsafe configurations. In the same way AI now automates code generation, it can also automate secure defaults and guardrails.If we get this right, vibe coding does not just make software e"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"025 Most Read BlogsWiz Threat ResearchJanuary 30, 2026A look back at the cloud security investigations and vulnerabilities that defined the year, from AI breakthroughs to supply chain shifts.AI Agents vs Humans: Who Wins at Web Hacking in 2026?Gal Nagli, IrregularJanuary 29, 2026Wiz Research teamed "
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"hain shifts.AI Agents vs Humans: Who Wins at Web Hacking in 2026?Gal Nagli, IrregularJanuary 29, 2026Wiz Research teamed up with Irregular, a frontier AI security lab, to settle this once and for all.Introducing the WIN Partner Index: The Integrations That Powered Modern Cloud Security in 2025Bandhn"
+https://github.com/mattermost/mattermost/issues/8886,LICENSE: _may be_ licensed to use source code; incorrect license grant. · Issue #8886 · mattermost/mattermost · GitHub,"e platformAI-powered developer platformAVAILABLE ADD-ONSGitHub Advanced SecurityEnterprise-grade security featuresCopilot for BusinessEnterprise-grade AI featuresPremium SupportEnterprise-grade 24/7 supportPricing
+
+
+
+
+
+
+
+
+
+
+Search or jump to...
+
+
+
+
+
+
+
+Search code, repositories, users, issues, pull r"
+https://github.com/stelviodev/stelvio,"GitHub - stelviodev/stelvio: Ship Python to AWS in minutes, not days","e platformAI-powered developer platformAVAILABLE ADD-ONSGitHub Advanced SecurityEnterprise-grade security featuresCopilot for BusinessEnterprise-grade AI featuresPremium SupportEnterprise-grade 24/7 supportPricing
+
+
+
+
+
+
+
+
+
+
+Search or jump to...
+
+
+
+
+
+
+
+Search code, repositories, users, issues, pull r"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+        The Keyword
+      
+
+
+
+Advancing AI benchmarking with Game Arena
+
+
+
+
+
+
+Share
+
+
+
+
+
+
+x.com
+
+
+
+
+
+Facebook
+
+
+
+
+
+LinkedIn
+
+
+
+
+
+Mail
+
+
+
+
+
+
+Copy link
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               Home
+   "
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess"," 
+
+
+
+
+
+Learn more:
+
+
+
+Google DeepMind blog
+
+
+
+
+
+
+
+
+
+Google Research blog
+
+
+
+
+
+
+
+
+
+Google Developers blog
+
+
+
+
+
+
+
+
+
+Google Cloud blog
+
+
+
+
+
+
+
+
+
+
+
+See all AI updates
+
+
+
+
+
+
+
+
+
+
+
+
+            Models & Research
+          
+
+
+
+                    Google DeepMind
+
+                    
+                  
+
+
+
+  "
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","  
+
+
+
+
+
+
+Learn more:
+
+
+Google DeepMind blog
+
+
+
+
+
+
+
+Google Research blog
+
+
+
+
+
+
+
+Google Developers blog
+
+
+
+
+
+
+
+Google Cloud blog
+
+
+
+
+
+
+
+
+        See all AI updates
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Products & platforms
+              
+
+
+
+
+
+
+
+
+
+
+
+
+    Products & platforms
+  
+
+
+
+            Products
+"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","
+      
+
+        Sverige (Svenska)
+      
+
+        ประเทศไทย (ไทย)
+      
+
+        Türkiye (Türkçe)
+      
+
+        台灣 (中文)
+      
+
+
+
+
+    [""What does AI mean for retail?"", ""How did Nano Banana get its name?"", ""How can AI help me plan travel?""]
+  
+
+
+
+    Subscribe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          The Keywo"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","     
+
+        Türkiye (Türkçe)
+      
+
+        台灣 (中文)
+      
+
+
+
+
+    [""What does AI mean for retail?"", ""How did Nano Banana get its name?"", ""How can AI help me plan travel?""]
+  
+
+
+
+    Subscribe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          The Keyword
+        
+
+
+
+
+
+
+               Home
+            
+
+
+
+              "
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess"," 
+
+
+
+
+
+Learn more:
+
+
+
+Google DeepMind blog
+
+
+
+
+
+
+
+
+
+Google Research blog
+
+
+
+
+
+
+
+
+
+Google Developers blog
+
+
+
+
+
+
+
+
+
+Google Cloud blog
+
+
+
+
+
+
+
+
+
+
+
+See all AI updates
+
+
+
+
+
+
+
+
+
+
+
+              Products & platforms
+              
+
+
+
+
+
+
+
+
+
+
+
+
+    Products & platforms
+  
+
+
+
+            Products
+            
+"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","       Innovation & AI
+          
+
+
+
+
+
+
+              Models & research
+          
+
+
+
+
+
+
+              Google DeepMind
+          
+
+
+
+
+
+
+
+
+
+
+
+Advancing AI benchmarking with Game Arena
+
+
+
+
+
+
+
+
+Feb 02, 2026
+·
+
+
+
+
+
+
+
+Share
+
+
+
+
+
+
+x.com
+
+
+
+
+
+Facebook
+
+
+
+
+
+LinkedIn
+
+
+
+
+
+Mail
+
+
+
+
+
+
+Copy link
+
+
+
+
+
+
+
+
+
+
+     "
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","DeepMind
+    
+
+
+
+
+
+
+
+
+
+
+      Read AI-generated summary
+      
+
+
+
+
+
+General summary
+
+Google DeepMind is expanding its Game Arena platform to benchmark AI models in more complex scenarios. You can now test your models in Werewolf and poker in addition to chess. Watch live tournaments on Kaggle to see"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","ss. Watch live tournaments on Kaggle to see how the top models perform in these games.
+
+
+            Summaries were generated by Google AI. Generative AI is experimental.
+          
+
+
+Bullet points
+
+
+Google DeepMind's ""Game Arena"" article discusses using games to benchmark AI, moving beyond perfect "
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","moving beyond perfect information scenarios.
+Game Arena expands beyond chess to include Werewolf, testing social deduction and communication skills in AI models.
+A new poker benchmark assesses AI's ability to manage risk and quantify uncertainty in competitive scenarios.
+Watch live streams of AI com"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","ills in AI models.
+A new poker benchmark assesses AI's ability to manage risk and quantify uncertainty in competitive scenarios.
+Watch live streams of AI competitions in poker, Werewolf, and chess with expert commentary on Kaggle.
+These benchmarks help develop safer AI by evaluating model behavior i"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","e scenarios.
+Watch live streams of AI competitions in poker, Werewolf, and chess with expert commentary on Kaggle.
+These benchmarks help develop safer AI by evaluating model behavior in complex, real-world-like environments.
+
+
+
+            Summaries were generated by Google AI. Generative AI is expe"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","velop safer AI by evaluating model behavior in complex, real-world-like environments.
+
+
+
+            Summaries were generated by Google AI. Generative AI is experimental.
+          
+
+
+Basic explainer
+
+Google DeepMind made a place called Game Arena to test how smart AI really is. They started with ch"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess"," generated by Google AI. Generative AI is experimental.
+          
+
+
+Basic explainer
+
+Google DeepMind made a place called Game Arena to test how smart AI really is. They started with chess to see how well AI can plan ahead. Now, they're adding Werewolf and poker to test AI on things like social skil"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess",".
+          
+
+
+Basic explainer
+
+Google DeepMind made a place called Game Arena to test how smart AI really is. They started with chess to see how well AI can plan ahead. Now, they're adding Werewolf and poker to test AI on things like social skills and risk-taking. These games help them see if AI ca"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","d Game Arena to test how smart AI really is. They started with chess to see how well AI can plan ahead. Now, they're adding Werewolf and poker to test AI on things like social skills and risk-taking. These games help them see if AI can handle the real world's trickiness and work safely with people.
+"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","w well AI can plan ahead. Now, they're adding Werewolf and poker to test AI on things like social skills and risk-taking. These games help them see if AI can handle the real world's trickiness and work safely with people.
+
+
+            Summaries were generated by Google AI. Generative AI is experime"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","elp them see if AI can handle the real world's trickiness and work safely with people.
+
+
+            Summaries were generated by Google AI. Generative AI is experimental.
+          
+
+
+
+          Explore other styles:
+        
+
+
+
+
+
+                  General summary
+                
+
+
+
+
+
+             "
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","
+
+Your browser does not support the audio element.
+
+
+
+
+
+
+
+
+
+
+          Listen to article
+          
+This content is generated by Google AI. Generative AI is experimental
+
+
+
+
+
+[[duration]] minutes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Voice
+
+
+
+
+
+
+
+
+
+
+
+
+
+Speed
+
+
+
+
+
+
+
+
+
+
+
+
+
+Voice
+
+
+
+
+
+Speed
+0.75X
+1X
+1.5X
+2X
+
+
+
+"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","ation. The real world is not.Last year, Google DeepMind partnered with Kaggle to launch Game Arena, an independent, public benchmarking platform where AI models compete in strategic games. We started with chess to measure reasoning and strategic planning. But in the real world, decisions are rarely "
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","e always been a core part of Google DeepMind’s history, offering an objective proving ground where difficulty scales with the level of competition. As AI systems become more general, mastering diverse games demonstrates their consistency across distinct cognitive skills. Beyond measuring performance"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess"," truth from deception and identify the hidden ""werewolves"" to win.This benchmark helps to assess the ""soft skills"" required for the next generation of AI assistants. The game tests communication, negotiation, and the ability to navigate ambiguity — the same capabilities agents need to collaborate ef"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess",eously red-teaming the model’s own capabilities around deception without the stakes of real-world deployment. This research is fundamental to building AI agents that act as reliable safeguards against bad actors.Gemini 3 Pro and Gemini 3 Flash currently hold the top two positions on the leaderboard.
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","and adapting to their playing styles to determine the best move.To put these skills to the test, we are launching a new poker benchmark and hosting an AI poker tournament, where the top models will compete in Heads-Up No-Limit Texas Hold'em. The final poker leaderboard will be revealed at kaggle.com"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess"," in to the three daily livestreams at 9:30 AM PT at kaggle.com/game-arena:Monday, Feb 2: The top eight models on the poker leaderboard face off in the AI poker battle.Tuesday, Feb 3: As the poker tournament semi-finals take place, we will also feature highlight matches from the Werewolf and chess le"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","I
+Hear more about interactive world models in our latest podcast.
+
+
+
+                    Jan 29, 2026
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+Google One
+Google AI Plus is now available everywhere our AI plans are available, including the U.S.
+
+
+
+                    By
+                    
+                   "
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","ls in our latest podcast.
+
+
+
+                    Jan 29, 2026
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+Google One
+Google AI Plus is now available everywhere our AI plans are available, including the U.S.
+
+
+
+                    By
+                    
+                      
+                      
+             "
+https://github.com/surprisetalk/AdBoost,GitHub - surprisetalk/AdBoost: AdBoost is the only browser extension that adds ads to web pages!,"e platformAI-powered developer platformAVAILABLE ADD-ONSGitHub Advanced SecurityEnterprise-grade security featuresCopilot for BusinessEnterprise-grade AI featuresPremium SupportEnterprise-grade 24/7 supportPricing
+
+
+
+
+
+
+
+
+
+
+Search or jump to...
+
+
+
+
+
+
+
+Search code, repositories, users, issues, pull r"
+https://maknee.github.io/blog/2026/NVIDIA-TileIR-Internals-from-CuTile-to-MLIR-LLVM-to-SASS/, NVIDIA TileIR Internals: from CuTile to MLIR/LLVM to SASS | Henry Zhu ,ton kernels   Network Storage and Scaling Characteristics of a Distributed Filesystem   Network and Storage Benchmarks for LLM Training on the Cloud   AI 2027    Please enable JavaScript to view the comments powered by giscus.       © Copyright 2026 Henry Zhu. # Powered by Jekyll with al-folio theme
