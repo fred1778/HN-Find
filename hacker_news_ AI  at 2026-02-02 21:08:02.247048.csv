@@ -1,0 +1,998 @@
+URL,Title,Extract
+https://news.ycombinator.com,Hacker News, hide | 1 comment6.Todd C. Miller – Sudo maintainer for over 30 years (millert.dev)193 points by wodniok 3 hours ago  | hide | 111 comments7.Advancing AI Benchmarking with Game Arena (blog.google)62 points by salkahfi 3 hours ago  | hide | 33 comments8.The largest number representable in 64 bits (tr
+https://news.ycombinator.com,Hacker News, hide | 1 comment6.Todd C. Miller – Sudo maintainer for over 30 years (millert.dev)193 points by wodniok 3 hours ago  | hide | 111 comments7.Advancing AI Benchmarking with Game Arena (blog.google)62 points by salkahfi 3 hours ago  | hide | 33 comments8.The largest number representable in 64 bits (tr
+https://github.com/mattermost/mattermost/issues/8886,GitHub · Where software is built,"e platformAI-powered developer platformAVAILABLE ADD-ONSGitHub Advanced SecurityEnterprise-grade security featuresCopilot for BusinessEnterprise-grade AI featuresPremium SupportEnterprise-grade 24/7 supportPricing
+
+
+
+
+
+
+
+
+
+
+Search or jump to...
+
+
+
+
+
+
+
+Search code, repositories, users, issues, pull r"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz BlogSign inExperiencing an incident?WizPricingGet a demoPlatform Solutions PricingResources Customers C
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog," Wiz BlogSign inExperiencing an incident?WizPricingGet a demoPlatform Solutions PricingResources Customers Company Get a demoBlogHacking Moltbook: The AI Social Network Any Human Can Control1 exposed database. 35,000 emails. 1.5M API keys. And 17,000 humans behind the not-so-autonomous AI network.Ga"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog," Moltbook: The AI Social Network Any Human Can Control1 exposed database. 35,000 emails. 1.5M API keys. And 17,000 humans behind the not-so-autonomous AI network.Gal NagliFebruary 2, 2026What is Moltbook, and Why Did it Attract Our Attention?Moltbook, the weirdly futuristic social network, has quick"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"2, 2026What is Moltbook, and Why Did it Attract Our Attention?Moltbook, the weirdly futuristic social network, has quickly gone viral as a forum where AI agents post and chat. But what we discovered tells a different story - and provides a fascinating look into what happens when applications are vib"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"nd all data accessed during the research and fix verification has been deleted.Executive SummaryMoltbook is a social platform designed exclusively for AI agents - positioned as the ""front page of the agent internet."" The platform allows AI agents to post content, comment, vote, and build reputation "
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"ve SummaryMoltbook is a social platform designed exclusively for AI agents - positioned as the ""front page of the agent internet."" The platform allows AI agents to post content, comment, vote, and build reputation through a karma system, creating what appears to be a thriving social network where AI"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"ows AI agents to post content, comment, vote, and build reputation through a karma system, creating what appears to be a thriving social network where AI is the primary participant.Moltbook home pageOver the past few days, Moltbook gained significant attention in the AI community. OpenAI founding me"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"e a thriving social network where AI is the primary participant.Moltbook home pageOver the past few days, Moltbook gained significant attention in the AI community. OpenAI founding member Andrej Karpathy described it as ""genuinely the most incredible sci-fi takeoff-adjacent thing I have seen recentl"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"ly on X that he ""vibe-coded"" the platform: I didn’t write a single line of code for @moltbook. I just had a vision for the technical architecture, and AI made it a reality.”This practice, while revolutionary, can lead to dangerous security oversights - similar to previous vulnerabilities we have ide"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"d humans could post content disguised as ""AI agents"" via a basic POST request. The platform had no mechanism to verify whether an ""agent"" was actually AI or just a human with a script. The revolutionary AI social network was largely humans operating fleets of bots.an HTTP Post request to create new "
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog," via a basic POST request. The platform had no mechanism to verify whether an ""agent"" was actually AI or just a human with a script. The revolutionary AI social network was largely humans operating fleets of bots.an HTTP Post request to create new ""agent"" post in Moltbook's platformAn ""agent"" post i"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,sponded exactly as if we were an administrator. It immediately returned sensitive authentication tokens - including the API keys of the platform’s top AI Agents.Redacted API keys of the Platform's top AI AgentsList of most popular AgentsThis confirmed unauthenticated access to user credentials that 
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog, immediately returned sensitive authentication tokens - including the API keys of the platform’s top AI Agents.Redacted API keys of the Platform's top AI AgentsList of most popular AgentsThis confirmed unauthenticated access to user credentials that would allow complete account impersonation of any 
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"xposed.Identified tables through the technique described aboveSensitive Data Exposed in the Moltbook Database1. API Keys and Authentication Tokens for AI AgentsThe agents table exposed authentication credentials for every registered agent in the database{
+
+    ""name"": ""KingMolt"",
+
+    ""id"": ""ee7e81d"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"iscovered a new observers table containing 29,631 additional email addresses - these were early access signups for Moltbook's upcoming “Build Apps for AI Agents” product.Additional tables from Moltbook's new developers productUnlike Twitter handles which were publicly displayed on profiles, email ad"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"post on the platform - Inject malicious content or prompt injection payloads - Deface the entire website - Manipulate content consumed by thousands of AI agentsThis raises questions about the integrity of all platform content - posts, votes, and karma scores - during the exposure window.Modified pos"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"ble speed and creativity, enabling founders to ship real products with unprecedented velocity - as demonstrated by Moltbook. At the same time, today’s AI tools don’t yet reason about security posture or access controls on a developer’s behalf, which means configuration details still benefit from car"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"identity, participation, and authenticity should look like, and the supporting mechanisms are still evolving.#3. Privacy Breakdowns Can Cascade Across AI EcosystemsSimilarly, the platform’s approach to privacy highlights an important ecosystem-wide lesson. Users shared OpenAI API keys and other cred"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"cessible. A single platform misconfiguration was enough to expose credentials for entirely unrelated services - underscoring how interconnected modern AI systems have become.#4. Write Access Introduces Far Greater Risk Than Data Exposure AloneWhile data leaks are bad, the ability to modify content a"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"4. Write Access Introduces Far Greater Risk Than Data Exposure AloneWhile data leaks are bad, the ability to modify content and inject prompts into an AI ecosystem introduces deeper integrity risks, including content manipulation, narrative control, and prompt injection that can propagate downstream"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"stem introduces deeper integrity risks, including content manipulation, narrative control, and prompt injection that can propagate downstream to other AI agents. As AI-driven platforms grow, these distinctions become increasingly important design considerations.#5. Security Maturity is an Iterative "
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"hese distinctions become increasingly important design considerations.#5. Security Maturity is an Iterative ProcessSecurity, especially in fast-moving AI products, is rarely a one-and-done fix. We worked with the team through multiple rounds of remediation, with each iteration surfacing additional e"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"rn as builders, researchers, and platforms collectively define the next phase of AI-native applications.Closing Thoughts on Vibe Coding and SecurityAs AI continues to lower the barrier to building software, more builders with bold ideas but limited security experience will ship applications that han"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"rely has not yet caught up.The opportunity is not to slow down vibe coding but to elevate it. Security needs to become a first class, built-in part of AI powered development. AI assistants that generate Supabase backends can enable RLS by default. Deployment platforms can proactively scan for expose"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"up.The opportunity is not to slow down vibe coding but to elevate it. Security needs to become a first class, built-in part of AI powered development. AI assistants that generate Supabase backends can enable RLS by default. Deployment platforms can proactively scan for exposed credentials and unsafe"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"abase backends can enable RLS by default. Deployment platforms can proactively scan for exposed credentials and unsafe configurations. In the same way AI now automates code generation, it can also automate secure defaults and guardrails.If we get this right, vibe coding does not just make software e"
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"025 Most Read BlogsWiz Threat ResearchJanuary 30, 2026A look back at the cloud security investigations and vulnerabilities that defined the year, from AI breakthroughs to supply chain shifts.AI Agents vs Humans: Who Wins at Web Hacking in 2026?Gal Nagli, IrregularJanuary 29, 2026Wiz Research teamed "
+https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys,Hacking Moltbook: AI Social Network Reveals 1.5M API Keys | Wiz Blog,"hain shifts.AI Agents vs Humans: Who Wins at Web Hacking in 2026?Gal Nagli, IrregularJanuary 29, 2026Wiz Research teamed up with Irregular, a frontier AI security lab, to settle this once and for all.Introducing the WIN Partner Index: The Integrations That Powered Modern Cloud Security in 2025Bandhn"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+
+
+        The Keyword
+      
+
+
+
+Advancing AI benchmarking with Game Arena
+
+
+
+
+
+
+Share
+
+
+
+
+
+
+x.com
+
+
+
+
+
+Facebook
+
+
+
+
+
+LinkedIn
+
+
+
+
+
+Mail
+
+
+
+
+
+
+Copy link
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               Home
+   "
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess"," 
+
+
+
+
+
+Learn more:
+
+
+
+Google DeepMind blog
+
+
+
+
+
+
+
+
+
+Google Research blog
+
+
+
+
+
+
+
+
+
+Google Developers blog
+
+
+
+
+
+
+
+
+
+Google Cloud blog
+
+
+
+
+
+
+
+
+
+
+
+See all AI updates
+
+
+
+
+
+
+
+
+
+
+
+
+            Models & Research
+          
+
+
+
+                    Google DeepMind
+
+                    
+                  
+
+
+
+  "
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","  
+
+
+
+
+
+
+Learn more:
+
+
+Google DeepMind blog
+
+
+
+
+
+
+
+Google Research blog
+
+
+
+
+
+
+
+Google Developers blog
+
+
+
+
+
+
+
+Google Cloud blog
+
+
+
+
+
+
+
+
+        See all AI updates
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Products & platforms
+              
+
+
+
+
+
+
+
+
+
+
+
+
+    Products & platforms
+  
+
+
+
+            Products
+"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","
+      
+
+        Sverige (Svenska)
+      
+
+        ประเทศไทย (ไทย)
+      
+
+        Türkiye (Türkçe)
+      
+
+        台灣 (中文)
+      
+
+
+
+
+    [""What does AI mean for retail?"", ""How did Nano Banana get its name?"", ""How can AI help me plan travel?""]
+  
+
+
+
+    Subscribe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          The Keywo"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","     
+
+        Türkiye (Türkçe)
+      
+
+        台灣 (中文)
+      
+
+
+
+
+    [""What does AI mean for retail?"", ""How did Nano Banana get its name?"", ""How can AI help me plan travel?""]
+  
+
+
+
+    Subscribe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          The Keyword
+        
+
+
+
+
+
+
+               Home
+            
+
+
+
+              "
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess"," 
+
+
+
+
+
+Learn more:
+
+
+
+Google DeepMind blog
+
+
+
+
+
+
+
+
+
+Google Research blog
+
+
+
+
+
+
+
+
+
+Google Developers blog
+
+
+
+
+
+
+
+
+
+Google Cloud blog
+
+
+
+
+
+
+
+
+
+
+
+See all AI updates
+
+
+
+
+
+
+
+
+
+
+
+              Products & platforms
+              
+
+
+
+
+
+
+
+
+
+
+
+
+    Products & platforms
+  
+
+
+
+            Products
+            
+"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","       Innovation & AI
+          
+
+
+
+
+
+
+              Models & research
+          
+
+
+
+
+
+
+              Google DeepMind
+          
+
+
+
+
+
+
+
+
+
+
+
+Advancing AI benchmarking with Game Arena
+
+
+
+
+
+
+
+
+Feb 02, 2026
+·
+
+
+
+
+
+
+
+Share
+
+
+
+
+
+
+x.com
+
+
+
+
+
+Facebook
+
+
+
+
+
+LinkedIn
+
+
+
+
+
+Mail
+
+
+
+
+
+
+Copy link
+
+
+
+
+
+
+
+
+
+
+     "
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","DeepMind
+    
+
+
+
+
+
+
+
+
+
+
+      Read AI-generated summary
+      
+
+
+
+
+
+General summary
+
+Google DeepMind is expanding its Game Arena platform to benchmark AI models in more complex scenarios. You can now test your models in Werewolf and poker in addition to chess. Watch live tournaments on Kaggle to see"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","ss. Watch live tournaments on Kaggle to see how the top models perform in these games.
+
+
+            Summaries were generated by Google AI. Generative AI is experimental.
+          
+
+
+Bullet points
+
+
+Google DeepMind's ""Game Arena"" article discusses using games to benchmark AI, moving beyond perfect "
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","moving beyond perfect information scenarios.
+Game Arena expands beyond chess to include Werewolf, testing social deduction and communication skills in AI models.
+A new poker benchmark assesses AI's ability to manage risk and quantify uncertainty in competitive scenarios.
+Watch live streams of AI com"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","ills in AI models.
+A new poker benchmark assesses AI's ability to manage risk and quantify uncertainty in competitive scenarios.
+Watch live streams of AI competitions in poker, Werewolf, and chess with expert commentary on Kaggle.
+These benchmarks help develop safer AI by evaluating model behavior i"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","e scenarios.
+Watch live streams of AI competitions in poker, Werewolf, and chess with expert commentary on Kaggle.
+These benchmarks help develop safer AI by evaluating model behavior in complex, real-world-like environments.
+
+
+
+            Summaries were generated by Google AI. Generative AI is expe"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","velop safer AI by evaluating model behavior in complex, real-world-like environments.
+
+
+
+            Summaries were generated by Google AI. Generative AI is experimental.
+          
+
+
+Basic explainer
+
+Google DeepMind made a place called Game Arena to test how smart AI really is. They started with ch"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess"," generated by Google AI. Generative AI is experimental.
+          
+
+
+Basic explainer
+
+Google DeepMind made a place called Game Arena to test how smart AI really is. They started with chess to see how well AI can plan ahead. Now, they're adding Werewolf and poker to test AI on things like social skil"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess",".
+          
+
+
+Basic explainer
+
+Google DeepMind made a place called Game Arena to test how smart AI really is. They started with chess to see how well AI can plan ahead. Now, they're adding Werewolf and poker to test AI on things like social skills and risk-taking. These games help them see if AI ca"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","d Game Arena to test how smart AI really is. They started with chess to see how well AI can plan ahead. Now, they're adding Werewolf and poker to test AI on things like social skills and risk-taking. These games help them see if AI can handle the real world's trickiness and work safely with people.
+"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","w well AI can plan ahead. Now, they're adding Werewolf and poker to test AI on things like social skills and risk-taking. These games help them see if AI can handle the real world's trickiness and work safely with people.
+
+
+            Summaries were generated by Google AI. Generative AI is experime"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","elp them see if AI can handle the real world's trickiness and work safely with people.
+
+
+            Summaries were generated by Google AI. Generative AI is experimental.
+          
+
+
+
+          Explore other styles:
+        
+
+
+
+
+
+                  General summary
+                
+
+
+
+
+
+             "
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","
+
+Your browser does not support the audio element.
+
+
+
+
+
+
+
+
+
+
+          Listen to article
+          
+This content is generated by Google AI. Generative AI is experimental
+
+
+
+
+
+[[duration]] minutes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Voice
+
+
+
+
+
+
+
+
+
+
+
+
+
+Speed
+
+
+
+
+
+
+
+
+
+
+
+
+
+Voice
+
+
+
+
+
+Speed
+0.75X
+1X
+1.5X
+2X
+
+
+
+"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","ation. The real world is not.Last year, Google DeepMind partnered with Kaggle to launch Game Arena, an independent, public benchmarking platform where AI models compete in strategic games. We started with chess to measure reasoning and strategic planning. But in the real world, decisions are rarely "
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","e always been a core part of Google DeepMind’s history, offering an objective proving ground where difficulty scales with the level of competition. As AI systems become more general, mastering diverse games demonstrates their consistency across distinct cognitive skills. Beyond measuring performance"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess"," truth from deception and identify the hidden ""werewolves"" to win.This benchmark helps to assess the ""soft skills"" required for the next generation of AI assistants. The game tests communication, negotiation, and the ability to navigate ambiguity — the same capabilities agents need to collaborate ef"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess",eously red-teaming the model’s own capabilities around deception without the stakes of real-world deployment. This research is fundamental to building AI agents that act as reliable safeguards against bad actors.Gemini 3 Pro and Gemini 3 Flash currently hold the top two positions on the leaderboard.
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","and adapting to their playing styles to determine the best move.To put these skills to the test, we are launching a new poker benchmark and hosting an AI poker tournament, where the top models will compete in Heads-Up No-Limit Texas Hold'em. The final poker leaderboard will be revealed at kaggle.com"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess"," in to the three daily livestreams at 9:30 AM PT at kaggle.com/game-arena:Monday, Feb 2: The top eight models on the poker leaderboard face off in the AI poker battle.Tuesday, Feb 3: As the poker tournament semi-finals take place, we will also feature highlight matches from the Werewolf and chess le"
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","            
+                    Suz Chambers
+                    
+
+
+                    Jan 29, 2026
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+Google One
+Google AI Plus is now available everywhere our AI plans are available, including the U.S.
+
+
+
+                    By
+                    
+                   "
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","mbers
+                    
+
+
+                    Jan 29, 2026
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+Google One
+Google AI Plus is now available everywhere our AI plans are available, including the U.S.
+
+
+
+                    By
+                    
+                      
+                      
+             "
+https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/,"Game Arena: Poker and Werewolf, and Gemini 3 tops chess","umpers” team brings Gemini to billions of people.
+
+
+
+                    Jan 27, 2026
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+Google DeepMind
+How animators and AI researchers made ‘Dear Upstairs Neighbors’
+
+
+
+                  By
+                  
+                    
+                    
+                  "
+https://github.com/stelviodev/stelvio,"GitHub - stelviodev/stelvio: Ship Python to AWS in minutes, not days","e platformAI-powered developer platformAVAILABLE ADD-ONSGitHub Advanced SecurityEnterprise-grade security featuresCopilot for BusinessEnterprise-grade AI featuresPremium SupportEnterprise-grade 24/7 supportPricing
+
+
+
+
+
+
+
+
+
+
+Search or jump to...
+
+
+
+
+
+
+
+Search code, repositories, users, issues, pull r"
+https://github.com/surprisetalk/AdBoost,GitHub - surprisetalk/AdBoost: AdBoost is the only browser extension that adds ads to web pages!,"e platformAI-powered developer platformAVAILABLE ADD-ONSGitHub Advanced SecurityEnterprise-grade security featuresCopilot for BusinessEnterprise-grade AI featuresPremium SupportEnterprise-grade 24/7 supportPricing
+
+
+
+
+
+
+
+
+
+
+Search or jump to...
+
+
+
+
+
+
+
+Search code, repositories, users, issues, pull r"
+https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad,Claude Code is suddenly everywhere inside Microsoft | The Verge,"nd weaknesses of Anthropic’s Claude Code, Anysphere’s Cursor, and Microsoft’s GitHub Copilot for months now, looking for a winner. While no individual AI coding tool manages to be the best at every task that software developers do each day, Claude Code is increasingly coming out on top for its ease "
+https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad,Claude Code is suddenly everywhere inside Microsoft | The Verge,"n in June last year, before favoring it for paid users of GitHub Copilot several months later. Now, Microsoft is going a step beyond using Anthropic’s AI models and widely adopting Claude Code across its biggest engineering teams.Microsoft’s CoreAI team, the new AI engineering group led by former Me"
+https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad,Claude Code is suddenly everywhere inside Microsoft | The Verge," going a step beyond using Anthropic’s AI models and widely adopting Claude Code across its biggest engineering teams.Microsoft’s CoreAI team, the new AI engineering group led by former Meta engineering chief Jay Parikh, has been testing Claude Code in recent months, and last week Microsoft’s Experi"
+https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad,Claude Code is suddenly everywhere inside Microsoft | The Verge,"osoft are now expected to use both Claude Code and GitHub Copilot and give feedback comparing the two, I’m told. Microsoft sells GitHub Copilot as its AI coding tool of choice to its customers, but if these broad internal pilot programs are successful, then it’s possible the company could even event"
+https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad,Claude Code is suddenly everywhere inside Microsoft | The Verge,"soft is now one of Anthropic’s top customers, according to a recent report from The Information. The software maker is also counting selling Anthropic AI models toward Azure sales quotas, which is unusual given Microsoft typically only offers its salespeople incentives for homegrown products or mode"
+https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad,Claude Code is suddenly everywhere inside Microsoft | The Verge,"rom OpenAI.Microsoft’s decision to adopt Claude Code more broadly among its engineering teams certainly looks like a vote of confidence in Anthropic’s AI tools over its own, especially as it’s encouraging nontechnical employees to try out coding. But the reality is that Microsoft’s developers are li"
+https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad,Claude Code is suddenly everywhere inside Microsoft | The Verge,"wn, especially as it’s encouraging nontechnical employees to try out coding. But the reality is that Microsoft’s developers are likely to use a mix of AI tools, and adopting Claude Code is another part of that tool set.“Companies regularly test and trial competing products to gain a better understan"
+https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad,Claude Code is suddenly everywhere inside Microsoft | The Verge," code repositories? Microsoft told me last year that 91 percent of its engineering teams use GitHub Copilot and a variety of teams have been using the AI tool to speed up mundane tasks. Microsoft’s use of AI tools has been largely restricted to software engineers, but with Claude Code and Claude Cow"
+https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad,Claude Code is suddenly everywhere inside Microsoft | The Verge,"1 percent of its engineering teams use GitHub Copilot and a variety of teams have been using the AI tool to speed up mundane tasks. Microsoft’s use of AI tools has been largely restricted to software engineers, but with Claude Code and Claude Cowork, Anthropic is increasingly focused on making codin"
+https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad,Claude Code is suddenly everywhere inside Microsoft | The Verge,"ngineers, but with Claude Code and Claude Cowork, Anthropic is increasingly focused on making coding and non-coding tasks more approachable, thanks to AI agent capabilities.Microsoft is embracing the ease of use of Claude Code to allow more nontechnical employees to commit code using AI, and this br"
+https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad,Claude Code is suddenly everywhere inside Microsoft | The Verge," the industry that these roles are increasingly disappearing because of AI. Microsoft just took another big step toward a future where more autonomous AI agents are creating code, further wrestling control from its software engineers.It’s Xbox timeMicrosoft is getting ready to show off two of its bi"
+https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad,Claude Code is suddenly everywhere inside Microsoft | The Verge,"mised 13,000 jobs, but now the land will be filled with a 1.2-million-square-foot data center project that will hold hundreds of thousands of Nvidia’s AI GPUs.The Xbox app is now available for all Arm-based Windows 11 PCs. After a rocky start to gaming on Windows on Arm, Microsoft has updated its Xb"
+https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad,Claude Code is suddenly everywhere inside Microsoft | The Verge, games will still need to be emulated using Microsoft’s Prism technology.Microsoft Paint now has an AI-powered coloring book. Microsoft is adding more AI features to its Paint app this week. Windows testers can now try out a coloring book feature that lets you create coloring book pages from a text 
+https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad,Claude Code is suddenly everywhere inside Microsoft | The Verge,"unak did agree with Nvidia CEO Jensen Huang that “you may not lose your job to AI, but you may well lose your job to someone using AI.” Nadella thinks AI will make us all “managers of infinite minds,” much like how we have “information at your fingertips.”Microsoft now sponsors the Mercedes-AMG F1 t"
+https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad,Claude Code is suddenly everywhere inside Microsoft | The Verge,"Switch 2 controller is for all the diehard GameCube fansThe Verge’s 2026 Valentine’s Day gift guide (for her)OpenClaw: all the news about the trending AI agentThe Epstein filesPlayDocusign’s CEO on the dangers of trusting AI to read, and write, your contractsFormer Windows 8 boss recruited Epstein t"
+https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad,Claude Code is suddenly everywhere inside Microsoft | The Verge,"6 Valentine’s Day gift guide (for her)OpenClaw: all the news about the trending AI agentThe Epstein filesPlayDocusign’s CEO on the dangers of trusting AI to read, and write, your contractsFormer Windows 8 boss recruited Epstein to help negotiate his messy Microsoft exitTom WarrenTwo hours agoAbxylut"
+https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad,Claude Code is suddenly everywhere inside Microsoft | The Verge," fansAndrew Liszewski5:23 PM UTCThe Verge’s 2026 Valentine’s Day gift guide (for her)Sheena Vasani4:45 PM UTCOpenClaw: all the news about the trending AI agentEmma Roth4:49 PM UTCThe Epstein filesVerge StaffTwo hours agoPlayDocusign’s CEO on the dangers of trusting AI to read, and write, your contra"
+https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad,Claude Code is suddenly everywhere inside Microsoft | The Verge,"aw: all the news about the trending AI agentEmma Roth4:49 PM UTCThe Epstein filesVerge StaffTwo hours agoPlayDocusign’s CEO on the dangers of trusting AI to read, and write, your contractsNilay Patel3:00 PM UTCAdvertiser Content FromThis is the title for the native adTop StoriesTwo hours agoFormer W"
+https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad,Claude Code is suddenly everywhere inside Microsoft | The Verge,"s with Mark Zuckerberg for killing Supernatural2:09 PM UTCElon Musk’s Grok is still undressing men3:00 PM UTCDocusign’s CEO on the dangers of trusting AI to read, and write, your contracts﻿VideoFeb 1Shedding light on Iran’s longest internet blackoutFeb 1This tiny pocket-friendly e-reader is packed w"
+https://tailscale.com/blog/hypergrowth-isnt-always-easy,Hypergrowth isn't always easy,Hypergrowth isn't always easyBring AI usage into focus with Aperture by Tailscale.Read the announcement →ProductSolutionsEnterpriseCustomersDocsBlogPricingDownloadLog inSchedule a demo
+https://github.com/paolomarrone/valanza,GitHub - paolomarrone/valanza: Weight tracking and analysis tools,"e platformAI-powered developer platformAVAILABLE ADD-ONSGitHub Advanced SecurityEnterprise-grade security featuresCopilot for BusinessEnterprise-grade AI featuresPremium SupportEnterprise-grade 24/7 supportPricing
+
+
+
+
+
+
+
+
+
+
+Search or jump to...
+
+
+
+
+
+
+
+Search code, repositories, users, issues, pull r"
